@@ -1,0 +1,22 @@
+import Products.Product as newProducts
+fun main(args: Array<String>) {
+    var sugar = Products.Product("сахар", 50, "килограмм","еда", 50)
+    sugar.ProductBaseInfo()
+    sugar.ProductCharactes()
+    sugar.Sum()
+    println("название торта:")
+    var name1: String = readln()
+    println("какой крем?")
+    var cream1: String = readln()
+    var cake1 = Cake(1500, cream1, name1, 700, "грамм", "бисквитный", 5)
+    cake1.ProductBaseInfo()
+    cake1.ProductCharactes()
+    cake1.Wright()
+    cake1.Filling()
+    var textile1 = Textile(10, "слабая", "сильная", "бязь",1000, "метр", "хлопок", 50)
+    textile1.ProductBaseInfo()
+    textile1.ProductCharactes()
+    textile1.Sum()
+    textile1.Long()
+    textile1.Characteristics()
+}
